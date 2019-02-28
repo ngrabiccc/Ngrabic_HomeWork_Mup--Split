@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+.div_main-img{
+     position: relative;
+     max-width: 100%;
+}
+.main-img{
+    background-image: url('https://publisher.mup.hr/PublicData/fotka_2-c16ad9ba1d.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10% 20% 28% 40%; 
+    grid-template-columns: 10% 60% 25%;
+    text-decoration: none;
+    filter: opacity(90%);
+    
+}
+.main-img:hover {
+    filter: opacity(100%);
+}
+.main_block {
+    display: block;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    width: 130%;
+}
+.main_date {
+    font-size: 15px;
+    color: white;
+   margin-top: 10px;
+}
+.main_text {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+.invisible-text {
+    display: none;
+    font-size-adjust: 14px;
+    color: #fff;
+}
+.grid {
+    top: 15px;
+    left: 34px;
+}
+.theme{
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #033E7C;
+    position: absolute;
+   
+ }
+
+
+
+.blocks{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.block{
+    display: grid;
+    grid-template-columns: 140px auto;
+     padding: 10px 0;
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+   
+}
+.img{
+    background-image: url(https://publisher.mup.hr/PublicData/projekti_civilna-zastita-3653c72b08.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 112px;
+}
+
+.raz{ 
+   display: grid;
+   grid-template-rows: 30px 40px;
+   position: relative;
+}
+
+.block_couple{
+    grid-row-start: 2; 
+    width: 100%;
+    position: absolute;
+   
+   
+}
+.text{
+    font-size: 15px;
+    color: #414142;
+    line-height: 16.8px;
+    font-weight: 700;
+}
+.date{
+    font-size: 14px;
+    font-style: italic;
+    color: #817c6f;
+    font-weight: 400;
+}
+
+
+.priopcenja {
+     max-width: 100%;
+     margin-left: 26px;
+     margin-top: 10px;
+     position: relative;
+}
+.liste {
+    list-style-type: none;
+}
+.lista {
+   padding:15px 10px;
+   border-bottom: 1px solid #E5E5E5;
+   margin-left: 30px;
+   cursor: pointer;
+}
+.list-text:hover{
+   color: #428db5;
+}
+.div_title {
+    width: 300px;
+}
+.title {
+    padding: 10px 0;
+    color: #414142;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: -30px;
+}
+.list-date {
+    font-size: 13px;
+    font-style: italic;
+    color: #777;
+}
+.list-text {
+    font-size: 16px;
+    color: #414142;
+}
+.div_button {
+    margin-top: 40px;
+    width:100%;
+    margin-left: 25%;
+}
+.button {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    color: #414142;
+     font-size: 14px;
+     font-weight: 700;
+    letter-spacing: 1px;
+     padding: 20px;
+     text-decoration: none;
+     text-align: center;
+     cursor: text;
+}
+.button:hover{
+    background-color: #fff;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+@media screen and (min-width: 550px){
+    
+    body{
+         background-color: #f2f2f2
+    }
+    .section{
+        max-width: 70%;
+        margin: auto;
+        background-color: white;
+    }
+    .main-img{
+        width: 100%;
+    }  
+}
+@media screen and (min-width: 768px){
+    .section{
+        display: grid;
+        grid-template-rows: auto 240px auto;
+    }
+    .main-img{
+        grid-row-start: 1;
+        width: 100%;
+    }
+    .blocks {
+        grid-row-start: 2;
+        margin: 0;
+        width: 100%;
+}
+    .block {
+        display: block;
+        padding: 0;
+        border: 0;
+        position: relative; 
+        float: left;
+        width: 33.33%;            
+}
+    .block:hover{
+         filter: opacity(96%);
+}
+    .img {
+    width: 100%;
+    height: 165px; 
+}
+    .raz { 
+     position: absolute;
+     left: 20px;
+     top: 10px;
+    }
+  .block_couple {
+      display: block;
+       width: 170px;
+       margin-top: 50px;
+}
+    .text {
+    color: white;
+}
+    .date {
+       color: white;
+}
+}
+
+@media screen and (min-width: 1024px){
+      
+    .section{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 495.4px auto;
+}
+    .main-img{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+}
+    .invisible-text{
+        display:block;
+        margin-top: 12px;
+}
+    .blocks {
+        max-width: 100%;
+        margin-top: 0;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        display: flex;
+        flex-direction: column;
+       margin: 0;
+}
+    .block {  
+        width: 100%;   
+}
+    .priopcenja {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+}
+    }
+
+@media screen and (min-width: 1440px){
+    body{
+        margin: 100px;
+}
+    .section {
+        display: grid;
+        grid-template-columns: 50% 15% 30%;
+        max-width: 100%;
+}
+         
+     .main-img {
+            box-shadow: 0 15px 29px #aaa496;
+}
+    .blocks {
+    box-shadow: 10px 13px 29px #aaa496;
+}
+    .priopcenja {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        padding: 20px 0 0 0;
+}
+    .button {
+      margin: auto;
+      padding: 13px 30%;
+      margin-left: -80px;
+}
+    .liste {
+        overflow: auto;
+        height: 290px;
+}
+    .title {
+        margin: auto;
+        margin-left: 53px;
+}
+}
+
+
+
