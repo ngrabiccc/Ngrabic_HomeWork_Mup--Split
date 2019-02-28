@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: grid;
+    width: 90%;
+    height: 90vh;
+    grid-template-areas: "smart zivot osplitu"
+                         "poslovno sluzbeni osplitu"
+                         "poslovno informacije ukljuci";
+    grid-gap: 10px;
+    
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 30% 35% 35%; 
+    margin: auto;
+    margin-top: 10px;
+}
+section > .smart_city{
+    grid-area: smart;
+  background-color: #fe0103;
+}
+section > .zivot {
+    grid-area: zivot;
+  background-color: #fe0103;
+}
+section > .osplitu {
+    grid-area: osplitu;
+  background-color: #fe0103;
+}
+section > .poslovno {
+    grid-area: poslovno;
+  background-color: #fe0103;
+}
+
+section > .sluzbeni {
+    grid-area: sluzbeni;
+  background-color: #fe0103;
+}
+section > .informacije {
+    grid-area: informacije;
+  background-color: #fe0103;
+}
+section > .ukljuci {
+    grid-area: ukljuci;
+  background-color: #fe0103;
+}
+.div{
+    margin: 10px;
+    width: 100%;
+    height: 100%;;
+    display: grid;
+    grid-template-rows: 20% 20% 50%;
+}
+.title{
+    color: white;
+    font-size: 20px;
+}
+.text{
+    color: white;
+    font-size: 14px;
+}
+.buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 60px;
+    align-self: end;
+    grid-row-start: 3;
+    
+}
+.button{
+    color: #b29e2d;
+    text-decoration: none;
+    padding: 6px;
+    background: yellow;
+    border-radius: 25px;
+    margin: 3px;
+    text-align: center;
+    align-self: end;
+}
+
+@media only screen and (max-width: 1024px) {
+        .buttons{
+           padding: 2px;
+           font-size: 12px;
+        }
+        .dn{
+            display:none;
+        }
+}
+@media only screen and (max-width: 768px) {
+    section{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 30% 30% 30% 40%;
+        grid-template-areas:  "smart zivot "
+                              "poslovno sluzbeni "
+                               "poslovno informacije "
+                               "osplitu osplitu"
+                               "ukljuci  ukljuci";
+    }
+}
+@media only screen and (max-width: 550px) {
+    section{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .m10{
+        margin-top:10px;
+    }
+}
+
